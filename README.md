@@ -34,12 +34,7 @@ Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 <script>
 
   export default {
-    props: {
-      msg: String,
-      isOpen: Boolean,
-      doYes: Function,
-      doNo: Function,
-    },
+    props: ['msg','isOpen','doYes','doNo'],
     data () {
       return {
         dialog: false
